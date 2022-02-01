@@ -5,6 +5,8 @@ app.use(express.static('views'));
 
 app.use(express.static('public'));
 
+app.use(express.static('images'));
+
 app.get("/", (request, response, next) => {
     response.sendFile(__dirname + `/views/home.htm`);
 });
